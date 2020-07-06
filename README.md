@@ -41,6 +41,11 @@ The network itself was trained by Davis King on a dataset of ~3 million images. 
 
 ## Face Recognition example in an image
 
+![Screenshot (14)](https://user-images.githubusercontent.com/49313619/86594937-89329200-bfb5-11ea-80f8-5f16df6ff862.png)
+
+## Face Recognition example using Video cam live stream
+
+![Screenshot (17)](https://user-images.githubusercontent.com/49313619/86595207-0100bc80-bfb6-11ea-9b71-33178ce7413b.png)
 
 
 
