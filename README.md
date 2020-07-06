@@ -37,6 +37,10 @@ The network itself was trained by Davis King on a dataset of ~3 million images. 
 
 ## Test Image for Face Recognition in an image
 
+![test](https://user-images.githubusercontent.com/49313619/86594808-4c669b00-bfb5-11ea-99cc-beefa932ca66.jpg)
+
+## Face Recognition example in an image
+
 
 
 
