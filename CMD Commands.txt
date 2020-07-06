@@ -1,0 +1,32 @@
+-->Install the following libraries:
+1) dlib
+2) face_recognition
+3) opencv
+4) imutils
+5) requests
+Command- pip install <library name>
+
+
+
+-->Download Training images with Bing Api using search_bing_api
+Command- python search_bing_api.py --query "<Image search>" --output dataset/<Folder name>
+Example- python search_bing_api.py --query "Messi" --output dataset/Messi
+
+
+
+-->Train the model with the downloaded images
+Command- python encode_faces.py --dataset dataset --encodings encodings.pickle
+Note: Will take time based on the number of photos and your computers computing time. If you're running through GPU Cuda
+then it will take much lesser time comapred to running in normal CPU.
+
+
+
+-->Recognise faces from a test image
+Command- python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png
+
+
+
+--> Recognise faces through webcam
+Command- python recognize_faces_video.py --encodings encodings.pickle --output output/webcam_face_recognition_output.avi --display 1
+
+
