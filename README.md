@@ -33,6 +33,8 @@ The network itself was trained by Davis King on a dataset of ~3 million images. 
 
 **Note: I would suggest you to istall dlib using GPU support if you have a GPU enabled system as it will make the training process faster. You can follow the steps mentioned in the link below to install Cuda and CudaDNN for your Nvidia graphic driver which will help you enable GPU support.**
 
+link- https://medium.com/@jjlovesstudying/python-cuda-set-up-on-windows-10-for-gpu-support-78126284b085
+
 *Note: For the following installs, ensure you are in a Python virtual environment if you’re using one. I highly recommend virtual environments for isolating your projects — it is a Python best practice. If you’ve followed my OpenCV install guides (and installed virtualenv  + virtualenvwrapper ) then you can use the workon  command prior to installing dlib  and face_recognition*
 
 ## Test Image for Face Recognition in an image
