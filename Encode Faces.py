@@ -1,6 +1,3 @@
-# USAGE
-# python encode_faces.py --dataset dataset --encodings encodings.pickle
-
 # import the necessary packages
 from imutils import paths
 import face_recognition
@@ -11,9 +8,11 @@ import os
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--dataset", required=True,
-	help="path to input directory of faces + images")
-ap.add_argument("-e", "--encodings", required=True,
+ap.add_argument("-i", "--dataset", type=str,
+	default="dataset",
+	help="path to dataset directory")
+ap.add_argument("-e", "--encodings", type=str,
+	default="encodings",
 	help="path to serialized db of facial encodings")
 ap.add_argument("-d", "--detection-method", type=str, default="cnn",
 	help="face detection model to use: either `hog` or `cnn`")
@@ -37,6 +36,7 @@ for (i, imagePath) in enumerate(imagePaths):
 	# load the input image and convert it from RGB (OpenCV ordering)
 	# to dlib ordering (RGB)
 	image = cv2.imread(imagePath)
+	image = cv2.resize(image, (1200, 800))
 	rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 	# detect the (x, y)-coordinates of the bounding boxes
@@ -60,3 +60,4 @@ data = {"encodings": knownEncodings, "names": knownNames}
 f = open(args["encodings"], "wb")
 f.write(pickle.dumps(data))
 f.close()
+
