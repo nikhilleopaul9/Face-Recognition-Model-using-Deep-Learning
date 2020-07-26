@@ -3,13 +3,13 @@ Face Recognition Model using Deep Learning technique know as Deep metric Learnin
 
 Perform face recognition in both images and video cam streams using:
 
-**OpenCV**
+* **OpenCV**
 
-**dlib**
+* **dlib**
 
-**Python**
+* **Python**
 
-**Deep learning**
+* **Deep learning**
 
 The deep learning-based facial embeddings are both:- 
 
